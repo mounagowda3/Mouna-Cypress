@@ -7,6 +7,7 @@
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true
     },
+    
     "include": ["cypress/integration/*.ts"],
     "exclude": ["node_modules"]
   }
