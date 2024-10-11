@@ -13,7 +13,8 @@ This project follows the Page Object Model (POM) design pattern:
 5. package.json - Lists npm packages and project dependencies.
 6. package-lock.json - Automatically generated to lock dependencies versions.
 7. Nodejs - Cypress built on Node.js and comes packaged as an npm module.
-8. Mocha - Mocha Framework is used to write test cases
+8. tsconfig.json - Configuration file which specifies the compiler options and settings for how TypeScript code should be compiled into JavaScript. 
+9. Mocha - Mocha Framework is used to write test cases
 
 # Installation
 1. Download and install Node.js.
