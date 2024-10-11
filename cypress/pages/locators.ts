@@ -9,6 +9,4 @@ const locators = {
     noResultsMessage: '.post.no-results.not-found.container.mb-5.mt-5 p',
 };
 
-
-
 export default locators;
