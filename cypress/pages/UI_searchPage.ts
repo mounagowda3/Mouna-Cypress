@@ -84,7 +84,7 @@ class SearchPage {
         }).then(() => {
             cy.log(initialElementTexts.join(', ')).then(() => {
                 return initialElementTexts; // Return the array of texts
-            }) // Log elements as a string            
+            })
         });
 
     }
@@ -93,7 +93,7 @@ class SearchPage {
         // Get elements after the search
         cy.get(locators.cardTitles).then(($secondSet) => {
             const elementsTextAfterSearch: string[] = Array.from($secondSet as HTMLElement[]).map((el) => {
-                return el.textContent || ''; // Use textContent to get the text
+                return el.textContent || ''; // textContent to get the text
             });
             initialElements.forEach((text, index) => {
                 if (!elementsTextAfterSearch[index].includes(text)) {
@@ -105,7 +105,6 @@ class SearchPage {
         });
     }
 
-
     verifyNoResultsFound(): void {
         cy.get(locators.noResultsHeader)
             .should('contain.text', 'Nothing Found');
@@ -114,9 +113,6 @@ class SearchPage {
         cy.log('Verified that no results were found');
     }
 }
-
-
-
 
 export default new SearchPage();
 
