@@ -114,7 +114,5 @@ class SearchPage {
     }
 }
 
-
-
 export default new SearchPage();
 

@@ -43,6 +43,4 @@ describe('UI Search Functionality', () => {
         SearchPage.verifyNoResultsFound();           // Verify that no results are found
     });
 
-
-    
 });
