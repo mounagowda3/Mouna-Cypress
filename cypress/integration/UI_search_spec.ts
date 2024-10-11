@@ -35,7 +35,6 @@ describe('UI Search Functionality', () => {
         });
     });
 
-
     it('Search with special characters data', () => {
         const searchElement: string = SearchPage.getRandomString(3) + '$#';
         cy.log(`Search with special characters: ${searchElement}`);
@@ -43,4 +42,5 @@ describe('UI Search Functionality', () => {
         SearchPage.typeSearchInput(searchElement);   // Type the search input
         SearchPage.verifyNoResultsFound();           // Verify that no results are found
     });
+
 });

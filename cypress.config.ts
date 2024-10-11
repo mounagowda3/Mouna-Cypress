@@ -10,3 +10,15 @@ export default defineConfig({
     screenshotsFolder: 'cypress/screenshots',
   },
 });
+
+module.exports = defineConfig({
+    e2e: {
+        reporter: 'mocha-spec', // Specify the reporter here
+        reporterOptions: {
+            // Options for the reporter can be specified here
+            "reporterOptions": {
+                "reporter": "spec",
+            }
+        }
+    },
+});

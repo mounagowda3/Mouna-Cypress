@@ -22,6 +22,8 @@ This project follows the Page Object Model (POM) design pattern:
 4. Install other things related to cypress: npm install --save-dev cypress cypress-xpath; npm install --save-dev @types/cypress;npm install --save-dev @types/mocha; npm install --save-dev @types/jquery
 5. Open Cypress Test Runner with the command: node_modules/.bin/cypress open.
 
+
+
 # To Run
 Open the project in the Test Runner and execute the tests (or)
 Run this command in VS code terminal - npx cypress run
