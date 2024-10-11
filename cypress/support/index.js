@@ -1,4 +1,6 @@
 import { SpecReporter } from 'jasmine-spec-reporter';
+import 'cypress-xpath';
+
 
 jasmine.getEnv().addReporter(new SpecReporter({
   spec: {
@@ -6,3 +8,5 @@ jasmine.getEnv().addReporter(new SpecReporter({
     displayDuration: true,
   }
 }));
+
+require('cypress-xpath');

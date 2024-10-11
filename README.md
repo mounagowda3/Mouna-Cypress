@@ -13,13 +13,14 @@ This project follows the Page Object Model (POM) design pattern:
 5. package.json - Lists npm packages and project dependencies.
 6. package-lock.json - Automatically generated to lock dependencies versions.
 7. Nodejs - Cypress built on Node.js and comes packaged as an npm module.
-8. Jasmine - Jasmine Framework is used to write test cases
+8. Mocha - Mocha Framework is used to write test cases
 
 # Installation
 1. Download and install Node.js.
 2. Download and install Visual Studio Code.
-3. Run in the terminal: npm install cypress
-4. Open Cypress Test Runner with the command: node_modules/.bin/cypress open.
+3. Install Cypress, Run in the terminal: npm install cypress
+4. Install other things related to cypress: npm install --save-dev cypress cypress-xpath; npm install --save-dev @types/cypress;npm install --save-dev @types/mocha; npm install --save-dev @types/jquery
+5. Open Cypress Test Runner with the command: node_modules/.bin/cypress open.
 
 # To Run
 Open the project in the Test Runner and execute the tests (or)
