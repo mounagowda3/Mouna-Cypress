@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-11T11:35:12.972Z",
+    "end": "2024-10-11T11:35:51.167Z",
+    "duration": 38195,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9498d04b-06df-4fe2-b4e8-83d431f940bb",
+      "title": "",
+      "fullFile": "cypress\\integration\\UI_search_spec.ts",
+      "file": "cypress\\integration\\UI_search_spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59aa0fe2-490d-40c6-8f8e-d4bc01b15859",
+          "title": "UI Search Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search with valid data",
+              "fullTitle": "UI Search Functionality Search with valid data",
+              "timedOut": null,
+              "duration": 8759,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchElement = 'Casino';\ncy.log(`Search with valid data: ${searchElement}`);\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickSearchIcon(); // Click the search icon \n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].verifySearchText(); // Verify the search text placeholder    \n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].typeSearchInput(searchElement); // Type the search input  \n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].verifySearchResultsContain(searchElement); // Verify that search results contain the search element",
+              "err": {},
+              "uuid": "a78042f0-49b3-4b77-a63e-c7658bcd94f7",
+              "parentUUID": "59aa0fe2-490d-40c6-8f8e-d4bc01b15859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search with invalid data",
+              "fullTitle": "UI Search Functionality Search with invalid data",
+              "timedOut": null,
+              "duration": 12345,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchElement = _pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getRandomString(6);\ncy.log(`Search with invalid data: ${searchElement}`);\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickSearchIcon(); // Click the search icon\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].typeSearchInput(searchElement); // Type the search input  \n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].verifyNoResultsFound(); // Verify that no results are found",
+              "err": {},
+              "uuid": "8161d73e-b8ab-4f77-a996-657a53b799ab",
+              "parentUUID": "59aa0fe2-490d-40c6-8f8e-d4bc01b15859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search with empty data",
+              "fullTitle": "UI Search Functionality Search with empty data",
+              "timedOut": null,
+              "duration": 5009,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchElement = '';\ncy.log('Search with empty data');\n// Store elements before the search\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].storeInitialElements().then((initialElements) => {\n    _pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickSearchIcon(); // Click the search icon\n    _pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].typeSearchInput(searchElement); // Type the empty search input    \n    _pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].verifyEmptySearchResultsContain(searchElement, initialElements); // Verify search results after the search\n});",
+              "err": {},
+              "uuid": "dc36bf25-5a43-4d48-90de-375831048f5e",
+              "parentUUID": "59aa0fe2-490d-40c6-8f8e-d4bc01b15859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search with special characters data",
+              "fullTitle": "UI Search Functionality Search with special characters data",
+              "timedOut": null,
+              "duration": 7315,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchElement = _pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getRandomString(3) + '$#';\ncy.log(`Search with special characters: ${searchElement}`);\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickSearchIcon(); // Click the search icon\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].typeSearchInput(searchElement); // Type the search input\n_pages_UI_searchPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"].verifyNoResultsFound(); // Verify that no results are found",
+              "err": {},
+              "uuid": "2f674e88-8023-4598-a6ca-9b5c51b5e6fb",
+              "parentUUID": "59aa0fe2-490d-40c6-8f8e-d4bc01b15859",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a78042f0-49b3-4b77-a63e-c7658bcd94f7",
+            "8161d73e-b8ab-4f77-a996-657a53b799ab",
+            "dc36bf25-5a43-4d48-90de-375831048f5e",
+            "2f674e88-8023-4598-a6ca-9b5c51b5e6fb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33428,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
